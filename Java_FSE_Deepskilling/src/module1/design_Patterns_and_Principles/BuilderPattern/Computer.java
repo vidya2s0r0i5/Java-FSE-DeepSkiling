@@ -10,6 +10,15 @@ public class Computer {
 		this.cpu = b.cpu;
 		this.storage = b.storage;
 	}
+	
+	
+// to display the configurations
+	@Override
+	public String toString() {
+		return "Computer [ram=" + ram + ", cpu=" + cpu + ", storage=" + storage + "]";
+	}
+
+
 
 	public static class Builder{
 		static int ram;
@@ -40,6 +49,10 @@ public class Computer {
 			return new Computer(this);
 		}
 	}
+
+
+
+	
 	
 	
 
